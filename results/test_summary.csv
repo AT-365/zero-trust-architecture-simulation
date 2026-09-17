@@ -1,0 +1,14 @@
+request_id,scenario,expected_decision,actual_decision,policy_result
+T01,HR user accesses HR records from compliant device,ALLOW,ALLOW,PASS
+T02,HR user attempts Finance database access,DENY,DENY,PASS
+T03,Finance user uses noncompliant device,DENY,DENY,PASS
+T04,Admin accesses admin console from trusted segment,ALLOW,ALLOW,PASS
+T05,Guest attempts internal HR access,DENY,DENY,PASS
+T06,High-risk unmanaged device attempts admin access,DENY,DENY,PASS
+T07,Valid HR user attempts access from wrong segment,DENY,DENY,PASS
+T08A,Repeated failed attempt 1,DENY,DENY,PASS
+T08B,Repeated failed attempt 2,DENY,DENY,PASS
+T08C,Repeated failed attempt 3,DENY,DENY,PASS
+T09,Device remains noncompliant after prior denial,DENY,DENY,PASS
+T10,Guest accesses public portal,ALLOW,ALLOW,PASS
+T11,Inactive account attempts access,DENY,DENY,PASS
