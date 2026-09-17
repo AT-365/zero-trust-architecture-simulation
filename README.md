@@ -4,6 +4,18 @@ A tested academic security prototype that evaluates every access request against
 
 The repository connects cloud/Linux administration and network evidence with executable Python policy logic. It is intentionally presented as a **controlled academic prototype**, not as a production identity platform, network access control system, or SIEM.
 
+## Portfolio artifacts
+
+| Artifact | Best use | What it demonstrates |
+|---|---|---|
+| [Narrated PowerPoint presentation](portfolio/Autenia_Murray_Zero_Trust_Narrated_Slideshow.ppsx) | Download and open in desktop PowerPoint | 12 slides with approximately 15 minutes of embedded narration and complete speaker-note transcripts |
+| [Presentation PDF](portfolio/Autenia_Murray_Zero_Trust_Presentation.pdf) | Fast browser preview | Concise visual explanation of the security problem, architecture, evidence, results, limitations, and next steps |
+| [Final technical report](portfolio/Autenia_Murray_Zero_Trust_Final_Report.pdf) | Detailed technical review | Full project rationale, Azure/Linux lab evidence, policy implementation, controlled network testing, results, and supporting documentation |
+
+### Viewing the narrated presentation
+
+GitHub does not play embedded PowerPoint narration in its browser preview. Download the `.ppsx` file and open it in the desktop version of Microsoft PowerPoint. The slideshow includes one narration track per slide. The narration is also written in each slide's speaker notes for accessibility and review.
+
 ## Verified results
 
 | Measure | Result |
@@ -49,6 +61,7 @@ See [`docs/architecture.md`](docs/architecture.md) for the policy flow and compo
 ├── results/                       # generated, synthetic decision and alert evidence
 ├── docs/architecture.md
 ├── docs/evidence.md
+├── portfolio/                     # narrated presentation, presentation PDF, and final report
 └── .github/workflows/tests.yml
 ```
 
@@ -98,4 +111,3 @@ The public repository does not contain credentials, SSH keys, cloud account deta
 - centralize protected logs and alert routing;
 - add risk-based and time-aware access rules; and
 - map the logical policies to network enforcement controls in a dedicated lab.
-
