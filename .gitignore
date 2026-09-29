@@ -10,5 +10,6 @@ venv/
 *.pcap
 *.pcapng
 *.log
+!evidence/zt_capture.pcap
+!evidence/http_server.log
 .DS_Store
-
