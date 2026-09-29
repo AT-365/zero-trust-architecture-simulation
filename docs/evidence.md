@@ -21,11 +21,17 @@ The generated files in `results/` allow each claim to be checked:
 
 ## Cloud and network lab evidence
 
-The accompanying academic lab used an Azure Ubuntu virtual machine. SSH was restricted to one trusted `/32` source, controlled traffic was generated, and packet behavior was inspected with `tcpdump` and Wireshark. The lab also used `nmap` for controlled validation.
+The accompanying academic lab used an Azure Ubuntu virtual machine. SSH was restricted to one trusted `/32` source, controlled traffic was generated against a localhost HTTP resource, and packet behavior was captured and inspected with `tcpdump`. The lab also used `nmap` for controlled validation.
 
-The raw packet capture and cloud screenshots are intentionally omitted from this public portfolio repository. That keeps infrastructure details private while the executable policy code and synthetic verification evidence remain directly inspectable.
+The public repository includes selected evidence that does not expose live infrastructure details:
+
+- [`../evidence/http_server.log`](../evidence/http_server.log) records successful localhost HTTP requests.
+- [`../evidence/zt_capture.pcap`](../evidence/zt_capture.pcap) contains the small loopback-only packet capture used in the lab.
+- [`../portfolio/Autenia_Murray_Zero_Trust_Screenshot_Evidence.pdf`](../portfolio/Autenia_Murray_Zero_Trust_Screenshot_Evidence.pdf) contains redacted Azure, Ubuntu, packet-capture, simulation, and CSV screenshots.
+- [`../portfolio/Autenia_Murray_Zero_Trust_Live_Demo.mp4`](../portfolio/Autenia_Murray_Zero_Trust_Live_Demo.mp4) shows the simulation run and explains the generated evidence.
+
+Credentials, SSH keys, account identifiers, and real public IP addresses remain excluded.
 
 ## Accuracy boundary
 
 The repository demonstrates a policy decision and monitoring prototype. It does not claim production deployment, live identity-provider integration, endpoint-management integration, or SIEM operation.
-
